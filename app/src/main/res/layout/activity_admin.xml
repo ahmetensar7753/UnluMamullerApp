@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activityler.AdminActivity">
+
+    <Button
+        android:id="@+id/buttonAdminMusteriIslemleri"
+        android:layout_width="250dp"
+        android:layout_height="65dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="Müşteri İşlemleri"
+        android:textSize="16sp"
+        app:backgroundTint="#2196F3"
+        app:cornerRadius="20dp"
+        app:icon="@drawable/musteri_resim"
+        app:iconPadding="0dp"
+        app:iconSize="30dp"
+        app:iconTint="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonAdminPersonelislemleri" />
+
+    <Button
+        android:id="@+id/buttonAdminPersonelislemleri"
+        android:layout_width="250dp"
+        android:layout_height="65dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="Personel İşlemleri"
+        android:textSize="16sp"
+        app:backgroundTint="#2196F3"
+        app:cornerRadius="20dp"
+        app:icon="@drawable/personel"
+        app:iconPadding="0dp"
+        app:iconSize="30dp"
+        app:iconTint="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/buttonAdminMusteriIslemleri"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonAdminRaporlar" />
+
+    <Button
+        android:id="@+id/buttonAdminRaporlar"
+        android:layout_width="250dp"
+        android:layout_height="65dp"
+        android:gravity="center"
+        android:text="RAPORLAR"
+        android:textSize="16sp"
+        app:backgroundTint="#2196F3"
+        app:cornerRadius="20dp"
+        app:icon="@drawable/goz_resim"
+        app:iconPadding="0dp"
+        app:iconSize="30dp"
+        app:iconTint="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/buttonAdminPersonelislemleri"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonAdminUrunIslemleri" />
+
+    <Button
+        android:id="@+id/buttonAdminUrunIslemleri"
+        android:layout_width="250dp"
+        android:layout_height="65dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="Ürün İşlemleri"
+        android:textSize="16sp"
+        app:backgroundTint="#2196F3"
+        app:cornerRadius="20dp"
+        app:icon="@drawable/urun"
+        app:iconPadding="0dp"
+        app:iconSize="30dp"
+        app:iconTint="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/buttonAdminRaporlar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewAdminTarih"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="18/08/2021"
+        android:textColor="#9A0D0D"
+        android:textSize="14sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

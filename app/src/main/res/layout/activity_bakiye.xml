@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activityler.BakiyeActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvSevkiyatBakiyeMusteriler"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonSevkiyatBakiyeGeri"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewsatisok3" />
+
+    <Button
+        android:id="@+id/buttonSevkiyatBakiyeGeri"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="16dp"
+        android:background="#667D7C80"
+        android:text="Geri"
+        android:textSize="14sp"
+        app:backgroundTint="#667D7C80"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarSevkiyatBakiye"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#667D7C80"
+        android:minHeight="?attr/actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Müşteri Ara"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewsatisok3"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarSevkiyatBakiye" />
+
+    <ImageView
+        android:id="@+id/imageViewsatisok3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarSevkiyatBakiye"
+        app:srcCompat="@drawable/yukari_ok"
+        tools:ignore="VectorDrawableCompat" />
+</androidx.constraintlayout.widget.ConstraintLayout>

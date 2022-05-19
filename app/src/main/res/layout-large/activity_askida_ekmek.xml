@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#667D7C80"
+    tools:context=".Activityler.AskidaEkmekActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout29"
+        android:layout_width="600dp"
+        android:layout_height="620dp"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/constraintLayout30"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/buttonAskidaVerKaydet"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="55dp"
+            android:background="#667D7C80"
+            android:text="BAĞIŞ VER"
+            android:textColor="#A31616"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:backgroundTint="#667D7C80"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textView35"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="ASKIDA EKMEK VER"
+            android:textColor="#2196F3"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView40"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="100dp"
+            android:text="Verilen Adet :"
+            android:textColor="#A31616"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView41" />
+
+        <EditText
+            android:id="@+id/editTextAskidaVerilenAdet"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="90dp"
+            android:ems="10"
+            android:hint="Gir.."
+            android:inputType="number"
+            app:layout_constraintStart_toEndOf="@+id/textView40"
+            app:layout_constraintTop_toBottomOf="@+id/textView41" />
+
+        <TextView
+            android:id="@+id/textView41"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="170dp"
+            android:text="Güncel Askıda Ekmek Sayısı :"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView35" />
+
+        <TextView
+            android:id="@+id/textViewAskidaGuncelAdet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="170dp"
+            android:text="0"
+            android:textColor="#A31616"
+            android:textSize="16sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintStart_toEndOf="@+id/textView41"
+            app:layout_constraintTop_toBottomOf="@+id/textView35" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout30"
+        android:layout_width="600dp"
+        android:layout_height="620dp"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/constraintLayout29"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView29"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="ASKIDA EKMEK AL"
+            android:textColor="#2196F3"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView29">
+
+            <RadioButton
+                android:id="@+id/radioButtonPara"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Para Bağışı"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold|italic" />
+
+            <RadioButton
+                android:id="@+id/radioButtonAdet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Adet Bağışı"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold|italic" />
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/editTextAskidaTutar"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:ems="10"
+            android:hint="Gir.."
+            android:inputType="numberDecimal"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toStartOf="@+id/editTextAskidaAdet"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+        <EditText
+            android:id="@+id/editTextAskidaAdet"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:ems="10"
+            android:hint="Gir.."
+            android:inputType="number"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/editTextAskidaTutar"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+        <TextView
+            android:id="@+id/tutar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="263dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:text="Tutar :"
+            android:textColor="#A31616"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toStartOf="@+id/editTextAskidaTutar"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/adet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="109dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:text="Adet :"
+            android:textColor="#A31616"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toStartOf="@+id/editTextAskidaAdet"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+        <TextView
+            android:id="@+id/textViewAskidaSonuc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="160dp"
+            android:textColor="#2196F3"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/buttonAskidaAlKaydet"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:background="#667D7C80"
+            android:text="BAĞIŞ AL"
+            android:textColor="#A31616"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:visibility="invisible"
+            app:backgroundTint="#667D7C80"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewAskidaSonuc" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

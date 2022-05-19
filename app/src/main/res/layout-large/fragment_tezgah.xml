@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView90"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Tarihe Göre Ara"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout70"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout68"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="40dp"
+        android:background="#1E454142"
+        app:layout_constraintBottom_toTopOf="@+id/textView93"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/textView102"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="32dp"
+            android:text="Tezgah Gider :"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView111" />
+
+        <TextView
+            android:id="@+id/textView105"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="16dp"
+            android:text="Hibe Tutar :"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView102" />
+
+        <TextView
+            android:id="@+id/textViewTezgahHibeTutarAdmin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="32dp"
+            android:text="0.0"
+            android:textColor="#CA2323"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/textView105"
+            app:layout_constraintTop_toBottomOf="@+id/textViewTezgahGiderToplamAdmin" />
+
+        <TextView
+            android:id="@+id/textViewTezgahGiderToplamAdmin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="32dp"
+            android:text="0.0"
+            android:textColor="#CA2323"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/textView102"
+            app:layout_constraintTop_toBottomOf="@+id/textViewAskidaNakitGirisAdmin" />
+
+        <TextView
+            android:id="@+id/textView104"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="32dp"
+            android:text="TL"
+            android:textColor="#CA2323"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            app:layout_constraintStart_toEndOf="@+id/textViewTezgahGiderToplamAdmin"
+            app:layout_constraintTop_toBottomOf="@+id/textView113" />
+
+        <TextView
+            android:id="@+id/textView107"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="32dp"
+            android:text="TL"
+            android:textColor="#CA2323"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            app:layout_constraintStart_toEndOf="@+id/textViewTezgahHibeTutarAdmin"
+            app:layout_constraintTop_toBottomOf="@+id/textView104" />
+
+        <TextView
+            android:id="@+id/textView108"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="16dp"
+            android:text="Kasaya GİRİŞ ( Nakit +Kart ) :"
+            android:textColor="#2196F3"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewKasayaGirisAdmin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="16dp"
+            android:text="0.0"
+            android:textColor="#CA2323"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/textView108"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView110"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="16dp"
+            android:text="TL"
+            android:textColor="#CA2323"
+            android:textSize="24sp"
+            android:textStyle="italic"
+            app:layout_constraintStart_toEndOf="@+id/textViewKasayaGirisAdmin"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView111"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="32dp"
+            android:text="Askıda Ekmek Nakit Giriş :"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView108" />
+
+        <TextView
+            android:id="@+id/textViewAskidaNakitGirisAdmin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="32dp"
+            android:text="0.0"
+            android:textColor="#CA2323"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/textView111"
+            app:layout_constraintTop_toBottomOf="@+id/textViewKasayaGirisAdmin" />
+
+        <TextView
+            android:id="@+id/textView113"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="32dp"
+            android:text="TL"
+            android:textColor="#CA2323"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            app:layout_constraintStart_toEndOf="@+id/textViewAskidaNakitGirisAdmin"
+            app:layout_constraintTop_toBottomOf="@+id/textView110" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/buttonGunluk"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="50dp"
+        android:text="BUGÜN"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:backgroundTint="#2196F3"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView91"
+        app:layout_constraintEnd_toStartOf="@+id/buttonHaftalik"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonHaftalik"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="50dp"
+        android:text="SON 1 HAFTA"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:backgroundTint="#2196F3"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView91"
+        app:layout_constraintEnd_toStartOf="@+id/buttonAylik"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/buttonGunluk" />
+
+    <Button
+        android:id="@+id/buttonAylik"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="50dp"
+        android:text="SON 1 AY"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:backgroundTint="#2196F3"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView91"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/buttonHaftalik" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout69"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="150dp"
+        android:background="#1E454142"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/textView114"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="16dp"
+            android:text="Bayat Sayısı Adet                 :"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView97" />
+
+        <TextView
+            android:id="@+id/textViewBayatSayisiAdmin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="32dp"
+            android:text="0"
+            android:textColor="#CA2323"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/textView114"
+            app:layout_constraintTop_toBottomOf="@+id/textViewTezgahtarNakitRaporAdmin" />
+
+        <TextView
+            android:id="@+id/textView97"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="32dp"
+            android:text="Tezgahtar Nakit Raporu      :"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView98" />
+
+        <TextView
+            android:id="@+id/textViewTezgahtarNakitRaporAdmin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="32dp"
+            android:maxLength="6"
+            android:text="0.0"
+            android:textColor="#CA2323"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/textView97"
+            app:layout_constraintTop_toBottomOf="@+id/textViewTezgahtarKartRaporAdmin" />
+
+        <TextView
+            android:id="@+id/textView100"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="32dp"
+            android:text="TL"
+            android:textColor="#CA2323"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            app:layout_constraintStart_toEndOf="@+id/textViewTezgahtarNakitRaporAdmin"
+            app:layout_constraintTop_toBottomOf="@+id/textView101" />
+
+        <TextView
+            android:id="@+id/textView98"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="16dp"
+            android:text="Tezgahtar Kart Raporu        :"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewTezgahtarKartRaporAdmin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="16dp"
+            android:maxLength="6"
+            android:text="0.0"
+            android:textColor="#CA2323"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/textView98"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView101"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="16dp"
+            android:text="TL"
+            android:textColor="#CA2323"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            app:layout_constraintStart_toEndOf="@+id/textViewTezgahtarKartRaporAdmin"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView92"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="46dp"
+            android:layout_marginLeft="46dp"
+            android:layout_marginTop="32dp"
+            android:text="Adet"
+            android:textColor="#CA2323"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            app:layout_constraintStart_toEndOf="@+id/textViewBayatSayisiAdmin"
+            app:layout_constraintTop_toBottomOf="@+id/textView100" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textView91"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="OTOMATİK HESAPLANAN DEĞERLER"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout68"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView93"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="TEZGAHTAR RAPORU"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout69"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView94"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="110dp"
+        android:layout_marginLeft="110dp"
+        android:text="KASADAKİ AÇIK :"
+        android:textColor="#CA2323"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout69" />
+
+    <TextView
+        android:id="@+id/textViewKasadakiAcikAdmin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:text="Görmek İçin Tıkla"
+        android:textColor="#2196F3"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView94"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout69" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout70"
+        android:layout_width="450dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="16dp"
+        android:background="#1E454142"
+        app:layout_constraintBottom_toTopOf="@+id/buttonTariheGoreAra"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Spinner
+            android:id="@+id/gun"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/ay"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Spinner
+            android:id="@+id/ay"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/yil"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/gun"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Spinner
+            android:id="@+id/yil"
+            android:layout_width="160dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/ay"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/buttonTariheGoreAra"
+        android:layout_width="125dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="50dp"
+        android:text="ARA"
+        android:textSize="20sp"
+        app:backgroundTint="#2196F3"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonHaftalik"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

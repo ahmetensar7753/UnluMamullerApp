@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.info.firinotomasyon">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icon_ekmek"
+        android:label="KRİSTAL EKMEK"
+        android:roundIcon="@mipmap/icon_ekmek_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FirinOtomasyon">
+
+        <activity android:name=".Activityler.SevkiyatSiparisSirasiActivity" />
+
+        <activity android:name=".Activityler.ImalatSiparisDetayActivity"
+            android:screenOrientation="landscape"/>
+
+        <activity android:name=".Activityler.ImalatToplamSayilarActivity"
+            android:screenOrientation="landscape"/>
+
+        <activity android:name=".Activityler.ImalatSiparisActivity"
+            android:screenOrientation="landscape"/>
+
+        <activity android:name=".Activityler.AdminRaporlarActivity" />
+
+        <activity android:name=".Activityler.AdminOzetIstatistiklerActivity" />
+
+        <activity android:name=".Activityler.AdminMusteriAldigiUrunlerActivity" />
+
+        <activity android:name=".Activityler.AdminMusteriDetayActivity" />
+
+        <activity android:name=".Activityler.AdminMusteriActivity" />
+
+        <activity android:name=".Activityler.UrunDuzenleActivity" />
+
+        <activity android:name=".Activityler.AdminUrunlerActivity" />
+
+        <activity android:name=".Activityler.PersonelDuzenlemeActivity" />
+
+        <activity android:name=".Activityler.AdminPersonelActivity" />
+        <activity
+            android:name=".Activityler.AskidaEkmekActivity"
+            android:screenOrientation="landscape" />
+        <activity android:name=".Activityler.BakiyeMusteriActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Activityler.BakiyeActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Activityler.SevkiyatSiparisMusteriActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Activityler.SevkiyatSiparisActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Activityler.SevkiyatMusteriOdemeActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Activityler.SevkiyatMusteriActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Activityler.SevkiyatSatisActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Activityler.SevkiyatActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Activityler.TezgahMusteriActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Activityler.GiderActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Activityler.TezgahGramajActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Activityler.StokActivity"
+            android:screenOrientation="landscape" />
+        <activity android:name=".Activityler.AdminActivity" />
+        <activity
+            android:name=".Activityler.ImalatActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Activityler.TezgahActivity"
+            android:screenOrientation="landscape" />
+        <activity android:name=".Activityler.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#667D7C80">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout3"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        app:boxBackgroundColor="#FFFFFF"
+        app:boxStrokeColor="#2196F3"
+        app:endIconTint="#2196F3"
+        app:hintTextColor="#2196F3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:startIconTint="#2196F3">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextPersonelAd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ad-Soyad"
+            android:textColor="#000000"
+            android:textCursorDrawable="@color/mavi" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout5"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        app:boxBackgroundColor="#FFFFFF"
+        app:boxStrokeColor="#2196F3"
+        app:endIconTint="#2196F3"
+        app:hintTextColor="#2196F3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout3"
+        app:startIconTint="#2196F3">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextPersonelTelefon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Telefon"
+            android:inputType="number"
+            android:textColor="#000000"
+            android:textCursorDrawable="@color/mavi" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout4"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        app:boxBackgroundColor="#FFFFFF"
+        app:boxStrokeColor="#2196F3"
+        app:endIconTint="#2196F3"
+        app:hintTextColor="#2196F3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout5"
+        app:startIconTint="#2196F3">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextPersonelSifre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Parolası"
+            android:inputType="number"
+            android:textColor="#000000"
+            android:textCursorDrawable="@color/mavi" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Spinner
+        android:id="@+id/spinnerPersonel"
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="150dp"
+        android:background="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout4" />
+
+    <Button
+        android:id="@+id/buttonPersonelEkle"
+        android:layout_width="480dp"
+        android:layout_height="70dp"
+        android:text="PERSONEL OLUŞTUR"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:backgroundTint="#9A0B0B"
+        app:cornerRadius="20dp"
+        app:icon="@drawable/plus3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerPersonel" />
+</androidx.constraintlayout.widget.ConstraintLayout>

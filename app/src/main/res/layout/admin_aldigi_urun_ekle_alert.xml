@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF">
+
+    <Spinner
+        android:id="@+id/spinnerAldigiUrunSec"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="25dp"
+        android:popupBackground="@color/white"
+        android:spinnerMode="dropdown"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextAdminAldigiUrunAdet"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="25dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="ADET"
+        android:inputType="number"
+        android:textColor="#000000"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/editTextAdminAldigiUrunFiyat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextAdminAldigiUrunFiyat"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="25dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="FİYAT"
+        android:inputType="numberDecimal"
+        android:textColor="#000000"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextAdminAldigiUrunAdet" />
+
+    <TextView
+        android:id="@+id/textView89"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="75dp"
+        android:layout_marginLeft="75dp"
+        android:layout_marginBottom="12dp"
+        android:text="ÜRÜN SEÇ"
+        android:textColor="#9A2525"
+        android:textSize="9sp"
+        app:layout_constraintBottom_toTopOf="@+id/spinnerAldigiUrunSec"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

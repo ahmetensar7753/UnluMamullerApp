@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView96"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Tarihe Göre Ara"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout75"
+        android:layout_width="450dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="#1E454142"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView96">
+
+        <Spinner
+            android:id="@+id/spinnerImalatGun"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/spinnerImalatAy"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Spinner
+            android:id="@+id/spinnerImalatAy"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/spinnerImalatYil"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/spinnerImalatGun"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Spinner
+            android:id="@+id/spinnerImalatYil"
+            android:layout_width="160dp"
+            android:layout_height="40dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/spinnerImalatAy"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/buttonImalatTariheGoreAra"
+        android:layout_width="125dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:text="ARA"
+        android:textSize="20sp"
+        app:backgroundTint="#2196F3"
+        app:cornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout75" />
+
+    <Button
+        android:id="@+id/buttonImalatHaftalik"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="50dp"
+        android:text="SON 1 HAFTA"
+        android:textSize="20sp"
+        app:backgroundTint="#2196F3"
+        app:cornerRadius="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/buttonImalatAylik"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonImalatTariheGoreAra" />
+
+    <Button
+        android:id="@+id/buttonImalatAylik"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="50dp"
+        android:text="SON 1 AY"
+        android:textSize="20sp"
+        app:backgroundTint="#2196F3"
+        app:cornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/buttonImalatHaftalik"
+        app:layout_constraintTop_toBottomOf="@+id/buttonImalatTariheGoreAra" />
+
+    <TextView
+        android:id="@+id/textView109"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        android:text="ÜRETİLEN ÜRÜNLER VE ADETLERİ"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonImalatTariheGoreAra" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvImalatUretilenUrunler"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView109" />
+</androidx.constraintlayout.widget.ConstraintLayout>

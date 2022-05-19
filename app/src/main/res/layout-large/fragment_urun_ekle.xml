@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout6"
+        android:layout_width="400dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="50dp"
+        app:boxBackgroundColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextUrunEkleAd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ürun Ad"
+            android:textColor="#000000"
+            android:textStyle="italic" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout7"
+        android:layout_width="400dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="75dp"
+        app:boxBackgroundColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout6">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextUrunEkleResimAd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ürun Resim Ad"
+            android:textColor="#000000"
+            android:textStyle="italic" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout8"
+        android:layout_width="400dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="75dp"
+        app:boxBackgroundColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView48">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextUrunEkleFiyat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ürun Fiyat"
+            android:inputType="numberDecimal"
+            android:textColor="#000000"
+            android:textStyle="italic" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/textView48"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Uyarı : Ürün Resim Adı veritabanındakiyle aynı olması gerekiyor."
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout7" />
+
+    <TextView
+        android:id="@+id/textView49"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="70dp"
+        android:text="Ör : Ekmek"
+        app:layout_constraintStart_toEndOf="@+id/textInputLayout6"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="120dp"
+        android:text="Ör : ekmek"
+        app:layout_constraintStart_toEndOf="@+id/textInputLayout7"
+        app:layout_constraintTop_toBottomOf="@+id/textView49" />
+
+    <TextView
+        android:id="@+id/textView51"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="140dp"
+        android:text="Ör : 1.75"
+        app:layout_constraintStart_toEndOf="@+id/textInputLayout8"
+        app:layout_constraintTop_toBottomOf="@+id/textView50" />
+
+    <Button
+        android:id="@+id/buttonAdminUrunEkleKaydet"
+        android:layout_width="260dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="16dp"
+        android:text="KAYDET"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:backgroundTint="#9A0B0B"
+        app:cornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerUrunEkleKimlik" />
+
+    <Spinner
+        android:id="@+id/spinnerUrunEkleKimlik"
+        android:layout_width="400dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="75dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout8" />
+</androidx.constraintlayout.widget.ConstraintLayout>

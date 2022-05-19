@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    android:background="#667D7C80"
+    tools:context=".Activityler.MainActivity"
+    tools:layout_editor_absoluteY="25dp">
+
+    <Button
+        android:id="@+id/buttonSevkiyatGiris"
+        android:layout_width="125dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="100dp"
+        android:text="Sevkiyat"
+        android:textColor="#525255"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:backgroundTint="#FFFFFF"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/textInputLayout12"
+        app:layout_constraintEnd_toStartOf="@+id/buttonAdminGiris"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonTezgahGiris"
+        android:layout_width="125dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="65dp"
+        android:text="Tezgah"
+        android:textColor="#525255"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:backgroundTint="#FFFFFF"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonSevkiyatGiris"
+        app:layout_constraintEnd_toStartOf="@+id/buttonImalatGiris"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonImalatGiris"
+        android:layout_width="125dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="65dp"
+        android:text="İmalathane"
+        android:textColor="#525255"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:backgroundTint="#FFFFFF"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonAdminGiris"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/buttonTezgahGiris" />
+
+    <Button
+        android:id="@+id/buttonAdminGiris"
+        android:layout_width="125dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="100dp"
+        android:text="Admin"
+        android:textColor="#525255"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:backgroundTint="#FFFFFF"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/textInputLayout12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/buttonSevkiyatGiris" />
+
+    <TextView
+        android:id="@+id/textViewMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:fontFamily="@font/berkshire_swash"
+        android:text="KRİSTAL EKMEK"
+        android:textColor="#B53F3F"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout12"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="90dp"
+        android:textColorHint="#525255"
+        app:boxBackgroundColor="#FFFFFF"
+        app:boxStrokeColor="#9F2020"
+        app:endIconTint="#9F2020"
+        app:hintTextColor="#9F2020"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:startIconTint="#9F2020">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextParola"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Parola"
+            android:inputType="numberPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

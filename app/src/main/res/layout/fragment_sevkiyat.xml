@@ -1,0 +1,606 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView95"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="GÜNCEL SAYI :"
+        android:textColor="#000000"
+        android:textSize="9sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewSevkiyatGuncelSayiAdmin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:text="0"
+        android:textColor="#AC2828"
+        android:textSize="9sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toEndOf="@+id/textView95"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView103"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:text="Adet"
+        android:textColor="#AC2828"
+        android:textSize="9sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toEndOf="@+id/textViewSevkiyatGuncelSayiAdmin"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView106"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="GÜNCEL MAL SATIŞ TOPLAM DEĞERİ :"
+        android:textColor="#000000"
+        android:textSize="9sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView95" />
+
+    <TextView
+        android:id="@+id/textViewSevkiyatGuncelToplamPara"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="28dp"
+        android:text="0.0"
+        android:textColor="#AC2828"
+        android:textSize="9sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toEndOf="@+id/textView106"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView112"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="28dp"
+        android:text="TL"
+        android:textColor="#AC2828"
+        android:textSize="9sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toEndOf="@+id/textViewSevkiyatGuncelToplamPara"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout71"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="5dp"
+        android:background="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView106">
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout72"
+        android:layout_width="330dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:background="#1E454142"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView115">
+
+        <Spinner
+            android:id="@+id/spinnerSevkiyatGun"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/spinnerSevkiyatAy"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Spinner
+            android:id="@+id/spinnerSevkiyatAy"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/spinnerSevkiyatYil"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/spinnerSevkiyatGun"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Spinner
+            android:id="@+id/spinnerSevkiyatYil"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/spinnerSevkiyatAy"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textView115"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Tarihe Göre Ara"
+        android:textColor="#000000"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout71" />
+
+    <Button
+        android:id="@+id/buttonSevkiyatTariheGoreAra"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:text="ARA"
+        android:textSize="10sp"
+        app:backgroundTint="#2196F3"
+        app:cornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout72" />
+
+    <Button
+        android:id="@+id/buttonSevkiyatAylik"
+        android:layout_width="125dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="25dp"
+        android:text="SON 1 AY"
+        android:textSize="10sp"
+        app:backgroundTint="#2196F3"
+        app:cornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/buttonSevkiyatHaftalik"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSevkiyatTariheGoreAra" />
+
+    <Button
+        android:id="@+id/buttonSevkiyatHaftalik"
+        android:layout_width="125dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="25dp"
+        android:text="SON 1 HAFTA"
+        android:textSize="10sp"
+        app:backgroundTint="#2196F3"
+        app:cornerRadius="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/buttonSevkiyatAylik"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSevkiyatTariheGoreAra" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout73"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#1E454142"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSevkiyatAylik">
+
+        <TextView
+            android:id="@+id/textView119"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="TOPLAM FİYAT :"
+            android:textColor="#000000"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView126"
+            app:layout_constraintTop_toBottomOf="@+id/textView118" />
+
+        <TextView
+            android:id="@+id/textView118"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="16dp"
+            android:text="TOPLAM İADE ADET :"
+            android:textColor="#000000"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/textView126"
+            app:layout_constraintTop_toBottomOf="@+id/textView117" />
+
+        <TextView
+            android:id="@+id/textView117"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="16dp"
+            android:text="TOPLAM ÜRÜN ADET :"
+            android:textColor="#000000"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/textView126"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewSevkiyatToplamUrunAdet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="16dp"
+            android:text="0"
+            android:textColor="#AC2828"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/textView117"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewSevkiyatToplamIadeAdet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:text="0"
+            android:textColor="#AC2828"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/textView118"
+            app:layout_constraintTop_toBottomOf="@+id/textViewSevkiyatToplamUrunAdet" />
+
+        <TextView
+            android:id="@+id/textViewSevkiyatOdenenToplamFiyat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:text="0.0"
+            android:textColor="#AC2828"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/textView119"
+            app:layout_constraintTop_toBottomOf="@+id/textViewSevkiyatToplamIadeAdet" />
+
+        <TextView
+            android:id="@+id/textView123"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:text="Adet"
+            android:textColor="#AC2828"
+            android:textSize="10sp"
+            android:textStyle="italic"
+            app:layout_constraintStart_toEndOf="@+id/textViewSevkiyatToplamUrunAdet"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView124"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:text="Adet"
+            android:textColor="#AC2828"
+            android:textSize="10sp"
+            android:textStyle="italic"
+            app:layout_constraintStart_toEndOf="@+id/textViewSevkiyatToplamIadeAdet"
+            app:layout_constraintTop_toBottomOf="@+id/textView123" />
+
+        <TextView
+            android:id="@+id/textView125"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:text="TL"
+            android:textColor="#AC2828"
+            android:textSize="10sp"
+            android:textStyle="italic"
+            app:layout_constraintStart_toEndOf="@+id/textViewSevkiyatOdenenToplamFiyat"
+            app:layout_constraintTop_toBottomOf="@+id/textView124" />
+
+        <TextView
+            android:id="@+id/textView126"
+            android:layout_width="12dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:gravity="center|start"
+            android:text="ÖDENEN"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textView116"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="OTOMATİK HESAPLANAN DEĞERLER"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout73"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout74"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#1E454142"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout73">
+
+        <TextView
+            android:id="@+id/textView130"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:text="TOPLAM FİYAT :"
+            android:textColor="#000000"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView127"
+            app:layout_constraintTop_toBottomOf="@+id/textView129" />
+
+        <TextView
+            android:id="@+id/textView129"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:text="TOPLAM İADE ADET :"
+            android:textColor="#000000"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/textView130"
+            app:layout_constraintStart_toEndOf="@+id/textView127"
+            app:layout_constraintTop_toBottomOf="@+id/textView128" />
+
+        <TextView
+            android:id="@+id/textView128"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:text="TOPLAM ÜRÜN ADET :"
+            android:textColor="#000000"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/textView129"
+            app:layout_constraintStart_toEndOf="@+id/textView127"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView127"
+            android:layout_width="12dp"
+            android:layout_height="130dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:text="ÖDENMEYEN"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewSevkiyatOdenmeyenAdet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:text="0"
+            android:textColor="#2196F3"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/textViewSevkiyatOdenmeyenIade"
+            app:layout_constraintStart_toEndOf="@+id/textView128"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView132"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:text="Adet"
+            android:textColor="#2196F3"
+            android:textSize="10sp"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toTopOf="@+id/textView134"
+            app:layout_constraintStart_toEndOf="@+id/textViewSevkiyatOdenmeyenAdet"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewSevkiyatOdenmeyenIade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:text="0"
+            android:textColor="#2196F3"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/textViewOdenmeyenToplamFiyat"
+            app:layout_constraintStart_toEndOf="@+id/textView129"
+            app:layout_constraintTop_toBottomOf="@+id/textViewSevkiyatOdenmeyenAdet" />
+
+        <TextView
+            android:id="@+id/textView134"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:text="Adet"
+            android:textColor="#2196F3"
+            android:textSize="10sp"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toTopOf="@+id/textView136"
+            app:layout_constraintStart_toEndOf="@+id/textViewSevkiyatOdenmeyenIade"
+            app:layout_constraintTop_toBottomOf="@+id/textView132" />
+
+        <TextView
+            android:id="@+id/textViewOdenmeyenToplamFiyat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:text="0.0"
+            android:textColor="#2196F3"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView130"
+            app:layout_constraintTop_toBottomOf="@+id/textViewSevkiyatOdenmeyenIade" />
+
+        <TextView
+            android:id="@+id/textView136"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:text="TL"
+            android:textColor="#2196F3"
+            android:textSize="10sp"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textViewOdenmeyenToplamFiyat"
+            app:layout_constraintTop_toBottomOf="@+id/textView134" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textView137"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginLeft="70dp"
+        android:text="Şoför Rapor-Teslim Edilen Para :"
+        android:textColor="#2196F3"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView120"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout74" />
+
+    <TextView
+        android:id="@+id/textViewSevkiyatRaporTeslimTutar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="0.0"
+        android:textColor="#AC2828"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textViewSevkiyatRaporTeslimIade"
+        app:layout_constraintStart_toEndOf="@+id/textView137"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout74" />
+
+    <TextView
+        android:id="@+id/textView139"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="TL"
+        android:textColor="#AC2828"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView131"
+        app:layout_constraintStart_toEndOf="@+id/textViewSevkiyatRaporTeslimTutar"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout74" />
+
+    <TextView
+        android:id="@+id/textView120"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginLeft="70dp"
+        android:text="Şoför Rapor-Teslim Edilen İade :"
+        android:textColor="#2196F3"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView137" />
+
+    <TextView
+        android:id="@+id/textViewSevkiyatRaporTeslimIade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="0"
+        android:textColor="#AC2828"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView120"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSevkiyatRaporTeslimTutar" />
+
+    <TextView
+        android:id="@+id/textView131"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="Adet"
+        android:textColor="#AC2828"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewSevkiyatRaporTeslimIade"
+        app:layout_constraintTop_toBottomOf="@+id/textView139" />
+</androidx.constraintlayout.widget.ConstraintLayout>
