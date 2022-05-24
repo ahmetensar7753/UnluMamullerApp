@@ -32,3 +32,9 @@ Günlük, haftalık ve aylık toplam istatistikler özet olarak görüntülenebi
 Detay istatistik görüntüleme vb. işlemler eklenecektir.
 
 Uygulamada RESTful mimarisiyle yazdığım webservisleri kullanılmıştır. webservisler ayrı bir dosyaya eklenecektir.
+
+Örnek giriş bilgileri:
+admin - 0817
+tezgah - 3001
+servis(sevkiyat) - 7741
+imalat - 2580
