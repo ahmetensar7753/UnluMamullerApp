@@ -1,5 +1,5 @@
-  # UnluMamullerApp
-  # UnluMamullerApp - 2021 JAVA Android Project
+# UnluMamullerApp - 2021 JAVA Android Project
+
 -This project has been developed to track the production, sales, storage, and product logistics for bakery and pastry businesses. It provides support for both tablet and phone screens.
 
 -The operation of the application is as follows:
