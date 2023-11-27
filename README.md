@@ -1,40 +1,18 @@
   # UnluMamullerApp
-  Unlu mamül üretim ve satış işletmeleri için geliştirilen bir android tablet uygulaması.
+  # UnluMamullerApp - 2021 JAVA Android Project
+-This project has been developed to track the production, sales, storage, and product logistics for bakery and pastry businesses. It provides support for both tablet and phone screens.
 
-  Uygulamanın admin panelindeki eksik kısımları ve tüm cihazlar için çoklu ekran desteği eklenecektir.
-Mevcut ekran destekleri > 8 inch ( admin paneli için çoğu var )
+-The operation of the application is as follows:
+The application consists of four main sections: Admin, Bench, Shipment, and Production. In the Admin section, user login information, determined and provided by the admin, allows staff to access only the designated section.
 
-  Uygulamanın çalışma mantığı şu şekildedir;
-Uygulama 4 farklı kısımdan oluşuyor Admin-Tezgah-Servis-İmalathane
+-In the Production section, the produced items are entered into the system, ensuring real-time inventory records. It also allows viewing shipment orders, enabling the separation and packaging of shipments and bench products accordingly.
 
-  Admin kısmında belirlenebilen ve personele verilen kullanıcı giriş bilgileri ile personel, sadece adminin belirlediği kısıma giriş yapabiliyor.
+-In the Shipment section, shipment personnel can view registered customers and the quantity of products they have purchased. They can update product quantities, receive payments as if making a sale, and record received payments along with the sold products. They can also view customers' past debts and total indebted product quantities.
 
-  Imalathane kısmında, üretilen ürünler sisteme giriliyor ve güncel-anlık stok kaydı yapılmış oluyor. Servis kısmına gidicek ve ayrı olması gereken
-ürünleri görebiliyor ve ona göre sırasıyla paketlemesini yapabiliyor.
+-In the Bench section, bench personnel easily enter each sale into the system. The entered products are collected in the cart, and the system automatically calculates the total according to the price set by the system administrator. After receiving payment, the sales process is completed. Sold products are deducted from the inventory, and information about the sold products and received payments is stored in separate tables.
 
-  Servis kısmında servis personeli sisteme kayıtlı olan müşterileri, aldıkları ürünleri sayısıyla görebiliyor. Ürün adetlerini güncelleyebiliyor. 
-Para teslim aldıktan sonra satış yapar gibi ödeme alıyor ve alınan ödemeler satılan ürünlerle beraber kaydediliyor. 
-Müşterilerin geçmiş borçlarını ve toplam borçlu ürün adetlerini görüntüleyebiliyor.
+-The Admin panel allows for the management and viewing of bench and shipment products, personnel and customer transactions, and their adjustments. Daily, weekly, and monthly total statistics can be viewed summarily.
 
-  Tezgah kısmında tezgah personeli, yaptığı her satışı önce ekranın ortasında bulunan rakamlar ile adet belirtip 
-sonrasında ürünün resminin üzerine tıklayarak belirleyebiliyor. Ürünün resminin üzerine tıkladıktan sonra adetiyle beraber sepete 
-ekleniyor ve toplam tutarda fiyat gösteriliyor.Satış butonuna bastıktan sonra ise ürünler stoktan düşüyor ve satış tutarıyla birlikte kaydediliyor.
-  Veresiye müşteriler var ise müşteriler butonuyla ayrı bir kısımda görüntülenebiliyor. Müşterinin geçmiş borçlarıyla ilgili işlemler oradan yapılabiliyor.
-Veresiye müşteriye ürün satılacağı zaman müşteriler kısmına geçip ilgili müşterinin üzerine tıklandığında tezgah ana sayfasındaki toplam tutarın üstüne
-müşterinin ismi geliyor. Bu şekilde satış yapıldığında kasaya nakit girişi olmadan müşterinin borcuna toplam tutar ve ürünler ekleniyor.
-  Tezgah kısmında olan diğer özellikler şunlardır; Kasadan satın alınan-ödenen şeyler için "Gider" kısmı,
-imalathaneden görüntülenebilen "İmalathane Not Gönder" kısmı, anlık stok takibi için "Stok" kısmı, hibe ve askıda ekmek işlemleri için olan 
-"Hibe" ve "Askıda Ekmek" kısımları ve son olarak gramaj ile satılan ürünler için tezgahın ana ekranındaki mantığa benzer bir mantıkta çalışan "Gramajlı Satış"
-kısımları bulunmaktadır.
+-RESTful architecture is used, with a database created in phpMyAdmin. Communication is facilitated through PHP web services running in the repository provided by the hosting company.
 
-Admin panelinde ise tezgah ürünleri, servis ürünleri, personel ve müşteri işlemleri ve bunların düzenlemeleri-görüntülenebilmeleri yapılabilmektedir. 
-Günlük, haftalık ve aylık toplam istatistikler özet olarak görüntülenebilmektedir.
-Detay istatistik görüntüleme vb. işlemler eklenecektir.
-
-Uygulamada RESTful mimarisiyle yazdığım webservisleri kullanılmıştır. webservisler ayrı bir dosyaya eklenecektir.
-
-Örnek giriş bilgileri:
-admin - 0817
-tezgah - 3001
-servis(sevkiyat) - 7741
-imalat - 2580
+-VOLLEY library is used on the application side, and Picasso library is employed for operations related to the images stored on the server.
